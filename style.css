@@ -46,3 +46,57 @@ body {
     outline: none;
     background: transparent;
 }
+
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.login-box .user-box input:focus ~ label, 
+.login-box .user-box input:valid ~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+
+.login-box form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: bidden;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-box a span{
+    position: absolute;
+    display: block;
+}
+
+
+.login-box a span:nth-child(1){
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+
+
+
+
+}
+
